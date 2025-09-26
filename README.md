@@ -41,3 +41,39 @@ npx prisma migrate dev
 
 # Start the development server
 npm run dev
+```
+<h1>Some models for representation</h1>
+
+```bash
+
+class Board {
+    constructor(id, title, description, userId, isActive = true) {
+        this.id = id;
+        this.title = title;
+        this.description = description || '';
+        this.userId = userId;
+        this.isActive = true;
+        this.createdAt = new Date();
+        this.updatedAt = new Date();
+    }
+}
+
+export default Board;
+
+```
+```bash
+
+class List {
+    constructor(id, title, position, boardId) {
+        this.id = id;
+        this.title = title;
+        this.position = position; 
+        this.boardId = boardId;  
+        this.createdAt = new Date();
+        this.updatedAt = new Date();
+    }
+}
+
+export default List;
+
+```
