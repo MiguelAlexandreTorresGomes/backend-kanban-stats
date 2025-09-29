@@ -11,8 +11,8 @@ A complete Kanban-style task management system backend.
 
 ## 📋 Features
 - [x] Boards CRUD
-- [ ] Lists CRUD (in development)
-- [ ] Cards CRUD
+- [x] Lists CRUD 
+- [ ] Cards CRUD (in development)
 - [ ] JWT Authentication
 
 ## 🏃‍♂️ Quick Start
